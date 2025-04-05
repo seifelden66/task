@@ -1,6 +1,5 @@
 import { NextResponse } from 'next/server';
 import { findUser } from '@/app/lib/users';
-import { getUsers } from '../../lib/users';
 
 // Fallback demo user
 const DEMO_USER = {
@@ -30,7 +29,6 @@ export async function POST(request) {
             (email === DEMO_USER.email && password === DEMO_USER.password);
 
         if (!isValidUser) {
-            console.log('All users:', getUsers());  // Debug log to see all users
 
             return NextResponse.json(
                 { error: 'Invalid email or password' },

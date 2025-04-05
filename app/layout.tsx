@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/app/components/Navbar";
-// import { usePathname } from 'next/navigation';
 import { StoreProvider } from "@/app/StoreProvider";
 import ConditionalNavbar from "./components/ConditionalNavbar";
 

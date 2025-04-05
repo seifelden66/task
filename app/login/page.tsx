@@ -86,7 +86,7 @@ export default function Login() {
                     </p>
                 )}
                 <p className="mt-4 text-center">
-                    don't have an account? <Link href="/register" className="text-blue-600 hover:underline">create account here</Link>
+                    don&apos;t have an account? <Link href="/register" className="text-blue-600 hover:underline">create account here</Link>
                 </p>
             </form>
         </AuthLayout>
