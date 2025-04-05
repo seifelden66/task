@@ -41,7 +41,7 @@ export default function Navbar() {
           <div className="flex items-center gap-4">
             {user && (
               <span className="text-gray-600">
-                {user.email}
+                {user?.email}
               </span>
             )}
             <button
