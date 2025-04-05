@@ -2,11 +2,12 @@
 import { useRouter } from 'next/navigation'
 import { useDispatch, useSelector } from 'react-redux'
 import { clearUser } from '../store'
+import { RootState } from '../store'
 
 export default function Navbar() {
   const router = useRouter()
   const dispatch = useDispatch()
-  const user = useSelector((state) => state.user.currentUser)
+  const user = useSelector((state: RootState) => state.user.currentUser)
 
   const handleLogout = async () => {
     if (!window.confirm('Are you sure you want to logout?')) {
